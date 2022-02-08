@@ -109,6 +109,45 @@ namespace Kordamine
 			Console.WriteLine("Yoy nigga, go back to your home!! Ass hole!!!");
 			}
 			Console.ReadKey();*/
+			/*	int ruut = 0;
+                Console.WriteLine("Какая длина стены a?");
+                int line1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Какая длина стены b?");
+                int line2 = int.Parse(Console.ReadLine());
+                ruut = line1 * line2;
+                Console.WriteLine($"Площадь пола = {plosad}");
+                Console.WriteLine("Хотели бы вы сделать ремонт?");
+                string work = Console.ReadLine();
+                if (work.ToUpper() == "ДА")
+                {
+                  Console.WriteLine("Сколько стоит квадратный метр?");
+                    int 1metr = int.Parse(Console.ReadLine());
+                }
+                else
+                {
+                    Console.WriteLine("Ну тогда до связи!");
+                }*/
+
+
+			    /*Console.WriteLine("Сколько градусов в вашей комнате?");
+                int answer = int.Parse(Console.ReadLine());
+                if (answer >= 18)
+                {
+                    Console.WriteLine("Ваша температура в комнате выше 18 градусов");
+                    string otvet = Console.ReadLine();
+                }
+				else
+				{
+					Console.WriteLine("Не ну летом холод это круто");				
+				}*/
+
+				skidon=70/100;
+				Console.WriteLine("Какая цена товара со скидкой?");
+				int price = int.Parse(Console.ReadLine());
+				stockprice = price * skidon;
+				Console.WriteLine("Начальная цена товара - {stockprice}?");
+				
+			Console.ReadKey();
 		}
 	}
 }
