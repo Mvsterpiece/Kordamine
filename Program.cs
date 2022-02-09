@@ -8,10 +8,15 @@ namespace Kordamine
 {
 	class Program
 	{
-		static void Main(string[] args)
-		{
-			
 
+			/*ConsoleKeyInfo k;
+			do
+			{
+				Console.WriteLine("Нажми кнопку!");
+				Console.Beep();
+				k = Console.ReadKey();
+			} while (k.Key != ConsoleKey.Escape);
+			Environment.Exit(0);
 
 
 
@@ -56,7 +61,7 @@ namespace Kordamine
 				string vastus = Console.ReadLine();
 				if (vastus.ToUpper() == "YE" || vastus.ToUpper() == "YES")
 				{
-					Console.WriteLine("Yoy homie, how old are you?");
+					Console.WriteLine("Yo homie, how old are you?");
 					int vanus = int.Parse(Console.ReadLine());
 					if (vanus < 0 || vanus > 108)
 					{
@@ -129,25 +134,24 @@ namespace Kordamine
                 }*/
 
 
-			    /*Console.WriteLine("Сколько градусов в вашей комнате?");
-                int answer = int.Parse(Console.ReadLine());
-                if (answer >= 18)
-                {
-                    Console.WriteLine("Ваша температура в комнате выше 18 градусов");
-                    string otvet = Console.ReadLine();
-                }
-				else
-				{
-					Console.WriteLine("Не ну летом холод это круто");				
-				}*/
-
-				skidon=70/100;
+			/*Console.WriteLine("Сколько градусов в вашей комнате?");
+			int answer = int.Parse(Console.ReadLine());
+			if (answer >= 18)
+			{
+				Console.WriteLine("Ваша температура в комнате выше 18 градусов");
+				string otvet = Console.ReadLine();
+			}
+			else
+			{
+				Console.WriteLine("Не ну летом холод это круто");				
+			}*/
+				
+				/*double skidon=70/100;
 				Console.WriteLine("Какая цена товара со скидкой?");
 				int price = int.Parse(Console.ReadLine());
 				stockprice = price * skidon;
 				Console.WriteLine("Начальная цена товара - {stockprice}?");
 				
-			Console.ReadKey();
-		}
+			Console.ReadKey();*/
 	}
 }
