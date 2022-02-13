@@ -33,7 +33,7 @@ namespace Kordamine
 				Console.Write($"{n_m*n_m,5}");
 			}*/
 			//Console.OutputEncoding = Encoding.UTF8; на русском
-			int[] arvudd = new int[5];
+			/*int[] arvudd = new int[5];
 			int a=0;
 			int k=0;
 			float arvv = 0;
@@ -62,20 +62,7 @@ namespace Kordamine
 			}
 			Console.WriteLine($"Summa = {summa}, korr={korr},arvv={arvv}");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-			Console.ReadLine();
+			Console.ReadLine();*/
 
 
 
@@ -107,6 +94,53 @@ namespace Kordamine
 				Console.WriteLine();
 			}
 			Console.ReadLine();*/
+
+
+
+
+
+
+
+
+
+
+			/*Console.WriteLine("Купи слона!");
+            string loom = Console.ReadLine();
+			if (loom != "слон")
+			{
+                Console.WriteLine("Все так говорят "+loom+ "а ты купи!");
+                Console.ReadLine();
+			}
+            Console.WriteLine("Слон теперь твой!");
+            Console.ReadLine();*/
+
+			/*Random rand = new Random();
+			int i = rand.Next(10);
+			int count = 1;
+			Console.WriteLine("Компьютер загадал число от 0 до 9. Попробуйте отгодать его за три попытки.");
+			Console.WriteLine("Введите первое число:");
+			int k = Convert.ToInt32(Console.ReadLine());
+			while (count <= 3)
+			{
+				if (i == k)
+				{
+					Console.WriteLine("Да! Компьютер загадал число " + k + "!");
+					break;
+				}
+				else
+				{
+					count++;
+					if (count == 4)
+					{
+						Console.WriteLine("Увы, вы не отгодали загаданное число. Это было число " + i + "!");
+						break;
+					}
+					Console.WriteLine("Нет, это не число " + k + "! Попытка № " + count + ":");
+					k = Convert.ToInt32(Console.ReadLine());
+				}
+			}
+			Console.ReadLine();*/
+
 
 
 
