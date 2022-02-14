@@ -10,6 +10,20 @@ namespace Kordamine
 	{
 		static void Main(string[] args)
 		{
+			int num1, num2, avg;
+			Console.Write("Number 1: ");
+			num1 = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Number 2: ");
+			num2 = Convert.ToInt32(Console.ReadLine());
+			avg = Average(num1, num2);
+			Console.WriteLine("The average of two numbers is " + avg);
+			Console.ReadLine();
+
+
+
+
+
+
 			/*Random rnd = new Random();
 			int N = rnd.Next(1, 100);
 			int M = rnd.Next(1, 100);
@@ -32,7 +46,7 @@ namespace Kordamine
 			{
 				Console.Write($"{n_m*n_m,5}");
 			}*/
-			//Console.OutputEncoding = Encoding.UTF8; на русском
+			//Console.OutputEncoding = Encoding.UTF8; //на русском
 			/*int[] arvudd = new int[5];
 			int a=0;
 			int k=0;
@@ -69,19 +83,15 @@ namespace Kordamine
 			/*char[] Tahed = new char[7] { 'A', 'B', 'C', 'D', 'E', 'F', 'G' };
 			Console.WriteLine($"Esimene täht on {Tahed[0]}");
 
-			foreach (char taht in Tahed)
-			{
-				Console.Write($"{taht,2}");
-			}
-			Random rnd = new Random();
+			funct.Massiiv_ekraanile(Tahed);
+			Array arvud;
+			arvud = funct.Arvud_massiivisse(10, false);
+			funct.Massiiv_ekraanile(arvud);
+			Console.WriteLine();
 			int[] arvud = new int[10];
 			for (int i = 0; i < arvud.Length; i++)
 			{
 				arvud[i] = rnd.Next(5,500);
-			}
-			foreach (int arv in arvud)
-			{
-				Console.Write($"{arv,4}\n");
 			}
 			int[,] tabel = new int[5,10];
 			for (int i = 0; i < 5; i++)
@@ -106,6 +116,7 @@ namespace Kordamine
 
 			/*Console.WriteLine("Купи слона!");
             string loom = Console.ReadLine();
+			Console.OutputEncoding = Encoding.UTF8; 
 			if (loom != "слон")
 			{
                 Console.WriteLine("Все так говорят "+loom+ "а ты купи!");
@@ -117,10 +128,11 @@ namespace Kordamine
 			/*Random rand = new Random();
 			int i = rand.Next(10);
 			int count = 1;
+			Console.OutputEncoding = Encoding.UTF8;
 			Console.WriteLine("Компьютер загадал число от 0 до 9. Попробуйте отгодать его за три попытки.");
 			Console.WriteLine("Введите первое число:");
 			int k = Convert.ToInt32(Console.ReadLine());
-			while (count <= 3)
+			while (count <= 5)
 			{
 				if (i == k)
 				{
@@ -130,7 +142,7 @@ namespace Kordamine
 				else
 				{
 					count++;
-					if (count == 4)
+					if (count == 6)
 					{
 						Console.WriteLine("Увы, вы не отгодали загаданное число. Это было число " + i + "!");
 						break;
@@ -140,11 +152,20 @@ namespace Kordamine
 				}
 			}
 			Console.ReadLine();*/
-
-
-
-
-
+			/*Array nelliarvud;
+			nelliarvud = funct.Arvud_massiivisse(4,true);
+			//Array.Reverse(nelliarvud);
+			//var arv = "";
+			int arv1 = 0;
+			int j = 0;
+			foreach (int n in nelliarvud)
+			{
+				//arv += n.ToString();
+				arv1 =(int)(arv1 + n * Math.Pow(10,j));
+				j++;
+			}
+			Console.WriteLine(arv1);
+			Console.ReadLine();*/
 		}
 
 	}
