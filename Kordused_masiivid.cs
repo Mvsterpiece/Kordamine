@@ -10,19 +10,6 @@ namespace Kordamine
 	{
 		static void Main(string[] args)
 		{
-			int num1, num2, avg;
-			Console.Write("Number 1: ");
-			num1 = Convert.ToInt32(Console.ReadLine());
-			Console.Write("Number 2: ");
-			num2 = Convert.ToInt32(Console.ReadLine());
-			avg = Average(num1, num2);
-			Console.WriteLine("The average of two numbers is " + avg);
-			Console.ReadLine();
-
-
-
-
-
 
 			/*Random rnd = new Random();
 			int N = rnd.Next(1, 100);
@@ -107,13 +94,6 @@ namespace Kordamine
 
 
 
-
-
-
-
-
-
-
 			/*Console.WriteLine("Купи слона!");
             string loom = Console.ReadLine();
 			Console.OutputEncoding = Encoding.UTF8; 
@@ -166,7 +146,48 @@ namespace Kordamine
 			}
 			Console.WriteLine(arv1);
 			Console.ReadLine();*/
+
+
+
+
+
+
+			/*int num1, num2, avg;
+			Console.Write("Number 1: ");
+			num1 = Convert.ToInt32(Console.ReadLine());
+			Console.Write("Number 2: ");
+			num2 = Convert.ToInt32(Console.ReadLine());
+			avg = Average(num1, num2);
+			Console.WriteLine("The average of numbers is " + avg);
+			Console.ReadKey();*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		}
 
-	}
+        /*private static int Average(int num1, int num2)
+        {
+            throw new NotImplementedException();
+        }*/
+    }
 }

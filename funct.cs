@@ -37,11 +37,71 @@ namespace Kordamine
 				Console.Write($" {a,4}");
 			}
 		}*/
-		public static int Average(int n1, int n2)
+
+
+
+
+
+
+
+
+
+		/*public static float Calculator()
 		{
-			int avrg = n1 + n2;
+			double a;
+			double b;
+			double itog;
+			char znak;
+			Console.WriteLine("Write 1st number");
+			a = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Write 2nd number");
+			b = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Enter an action");
+			znak = Convert.ToChar(Console.ReadLine());
+			if (znak == '+')
+			{
+				itog = a + b;
+			}
+			if (znak=='-')
+            {
+				itog = a - b;
+			}
+			if (znak == '*')
+            {
+				itog = a * b;
+            }
+			if (znak == '/')
+            {
+				itog = a / b;
+            }
+            Console.WriteLine()
+		}*/
+
+		/*public static double Average(double n1, double n2)
+		{
+			int avrg = (int)(n1 + n2)/2;
 			return avrg;
-		}
+		}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
