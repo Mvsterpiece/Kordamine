@@ -51,7 +51,7 @@
     <ApplicationIcon>images.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Kordamine.Kordused_masiivid</StartupObject>
+    <StartupObject>Kordamine.list_sonastik</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -65,7 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="funct.cs" />
+    <Compile Include="inimene.cs" />
     <Compile Include="Kordused_masiivid.cs" />
+    <Compile Include="list_sonastik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,8 +8,8 @@ namespace Kordamine
 {
 	class Kordused_masiivid
 	{
-		static void Main(string[] args)
-		{
+		
+		
 
 			/*Random rnd = new Random();
 			int N = rnd.Next(1, 100);
@@ -183,7 +183,6 @@ namespace Kordamine
 
 
 
-		}
 
         /*private static int Average(int num1, int num2)
         {
