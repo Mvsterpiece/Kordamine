@@ -10,7 +10,7 @@ namespace Kordamine
     {
         static void Main(string[] args)
         {
-            Random rnd = new Random();
+            /*Random rnd = new Random();
             List<int> numbers = new List<int>();
             for (int i = 0; i < 6; i++)
             {
@@ -21,17 +21,12 @@ namespace Kordamine
             {
                 Console.Write(number+" ");
             }
-            List<int> numbers1 = new List<int>();
+            List<int> result = new List<int>();
             int snumber = numbers[0];
             int enumber = numbers[numbers.Count - 1];
             numbers.Insert(0, enumber);
-            numbers.Add(snumber);
+            numbers.Add(snumber);*/
 
-
-
-
-
-            Console.ReadLine();
 
 
 
@@ -45,14 +40,20 @@ namespace Kordamine
             List<int> paaritu = new List<int>();
             foreach (int arv in koik_arvud)
             {
-                if(arv % 2==0)
+                if (arv % 2==0)
                 {
                     paaris.Add(arv);
                 }
                 else
                 {
                     paaritu.Add(arv);
-                }*/
+                }
+                Console.WriteLine(paaris);
+                Console.WriteLine(paaritu);
+            }
+            Console.ReadLine();*/
+            
+
 
             /*Random rnd = new Random();
             List<int> numbers = new List<int>();
@@ -73,8 +74,6 @@ namespace Kordamine
 
 
 
-
-
             /*Dictionary<int, string> sportlased = new Dictionary<int, string>();
             for (int i = 1; i < 6; i++)
             {
@@ -86,7 +85,7 @@ namespace Kordamine
             {
                 Console.WriteLine(kv.Key+"kohal"+ kv.Value);
             }
-            LinkedList<int> loetelu = new LinkedList<int>();
+            /*LinkedList<int> loetelu = new LinkedList<int>();
             for (int i = 0; i < 10; i++)
             {
                 loetelu.AddFirst(i);
@@ -99,8 +98,9 @@ namespace Kordamine
             {
                 Console.WriteLine(item);
             }
-            
+            Console.ReadLine();*/
 
+            /*
             List<inimene> inimesed = new List<inimene>();
             inimesed.Add(new inimene() {Nimi ="Madis"});
             inimesed.Add(new inimene() { Nimi = "Hui Lo Pan" });
