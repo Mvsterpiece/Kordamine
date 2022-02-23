@@ -27,7 +27,80 @@ namespace Kordamine
             numbers.Insert(0, enumber);
             numbers.Add(snumber);*/
 
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            Random rnd = new Random();
 
+            List<string> maakond = new List<string> { "Valgamaa", "Harjumaa", "Tartumaa", "Pärnumaa", "Viljandimaa" };
+            List<string> linn = new List<string> { "Valga", "Tallinn", "Tartu", "Pärnu", "Viljandi" };
+            bool choice = true;
+            int randInt = 0;
+            double score = 0;
+
+            for (int i = 0; i < maakond.Count; i++)
+            {
+                dict.Add(maakond[i], linn[i]);
+                dict.Add(linn[i], maakond[i]);
+            }
+            while (choice == true)
+            {
+
+                Console.WriteLine("Mida te tahate? Otsida maakonna/linna - 1, või kontrollida oma teadmisi - 2");
+                int answer = int.Parse(Console.ReadLine());
+                if (answer == 1)
+                {
+                    Console.Write("Siseta maakond või linn: ");
+                    string input = Console.ReadLine();
+                    if (dict.ContainsKey(input))
+                    {
+                        Console.WriteLine("Sellise maakonna/linna " + input + " on " + dict[input]);
+                    }
+                    else if (!dict.ContainsKey(input))
+                    {
+                        Console.WriteLine("Siin ei ole selle sõnumi, kas te tahate lisada? jah - 1, ei - 2");
+                        answer = int.Parse(Console.ReadLine());
+                        if (answer == 1)
+                        {
+                            Console.WriteLine("Siseta uus maakond");
+                            string new1 = Console.ReadLine();
+
+                            Console.WriteLine("Siseta uus linn");
+                            string new2 = Console.ReadLine();
+                            dict.Add(new1, new2);
+                            dict.Add(new2, new1);
+                        }
+                    }
+                }
+                else if (answer == 2)
+                {
+                    score = 0;
+                    for (int i = 0; i < maakond.Count; i++)
+                    {
+                        randInt = rnd.Next(1, 3);
+                        int b = rnd.Next(1, maakond.Count);
+                        if (randInt == 1)
+                        {
+                            Console.WriteLine("Linaa - " + maakond[b]);
+                            string userInput = Console.ReadLine();
+                            if (linn.IndexOf(userInput) == maakond.IndexOf(maakond[b]))
+                            {
+                                Console.WriteLine("Tore!");
+                                score++;
+                            }
+                        }
+                        else if (randInt == 2)
+                        {
+                            Console.WriteLine("Maakonaa - " + linn[b]);
+                            string userInput = Console.ReadLine();
+                            if (maakond.IndexOf(userInput) == linn.IndexOf(linn[b]))
+                            {
+                                Console.WriteLine("Tore!");
+                                score++;
+                            }
+                        }
+                    }
+                    Console.WriteLine(score / maakond.Count * 100 + "%");
+                }
+            }
 
 
 
@@ -52,7 +125,7 @@ namespace Kordamine
                 Console.WriteLine(paaritu);
             }
             Console.ReadLine();*/
-            
+
 
 
             /*Random rnd = new Random();
